@@ -1,5 +1,7 @@
 var scrap = require('cheerio');
 
+'expect input as html format'
+
 module.exports = {
   getTitle: function(html) {
     var parsedHTML = scrap.load(html)

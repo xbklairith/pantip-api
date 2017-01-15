@@ -29,6 +29,6 @@ describe('parser', function() {
 
   it('should have tags', function() {
     tags = parser.getTags(pantip_html);
+    expect(tags).not.to.be.empty;
   });
-
 });
