@@ -22,4 +22,13 @@ describe('Parsing', function() {
     expect(title).to.eql('คู่มือ แฉ แบไต๋ "ซื้อประกัน" อย่างคุ้มค่าและไร้กังวล {ลูกค้าอ่านดี ตัวแทนอ่านได้}')
   });
 
+  it('should have post story', function() {
+    story = parsing.getStory(pantip_html);
+    expect(story).not.to.be.empty;
+  });
+
+  it('should have tags', function() {
+    tags = parsing.getTags(pantip_html);
+  });
+
 });
